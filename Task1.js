@@ -1,3 +1,5 @@
+//Input text and display text in 3 boxes (1) unmodified (2) //toUpperCase (3) toLowerCase
+
 var event1 = document.getElementById("acceptString");
 event1.addEventListener('click', changeString, false);
 
