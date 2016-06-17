@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'> 
+    
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>    
+    
+<link href="taxCalculatorV2.css" type="text/css" rel="stylesheet">   
+    
+</head>
+    
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <h1>Salary Tax Calculator</h1>  
+            <h4>Please enter your annual salary and we'll calculate your income tax:</h4>
+        </div> <!-- closing tag for row-->
+        
+        <div class="row">
+                <div class="col-sm-5">
+                    <div id="inputBox"> 
+                    <input type="number" id="input1"/>
+                    <button id="calculate">Calculate tax</button>
+                    </div>
+                </div> <!-- closing tag for column -->
+        
+                <div class="col-sm-6">
+                    <div class="box"><b>Personal allowance is set to £11,000</b></div> 
+                </div> <!-- closing tag for column-->
+        </div> <!-- closing tag for row-->
+        
+        
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-5">
+                <div class="box">
+                    <span><b>Your Gross Salary is: </b></span><span id="grossSal"></> 
+                </div>
+            </div> <!-- closing tag for column-->
+        </div> <!--closing tag for row-->
+        
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-5">
+                <div class="box">
+                    <span><b>The tax deducted from your salary is: </b></span><span id="taxCount"></span>
+                </div>
+            </div> <!-- closing tag for column -->
+        </div> <!-- closing tag for row-->
+        
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-5">
+                <div class="box">
+                    <span><b>Your net salary is: </b></span><span id="netSalary"></span>
+                </div>
+            </div> <!-- closing tag for column-->
+        </div> <!-- closing tag for row-->
+        
+             
+    </div> <!--closing tag for container-->
+        
+ <script src="taxCalculatorv2.js"></script>
+        
+</body>    
+       
+</html>
