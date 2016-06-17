@@ -3,9 +3,18 @@
 var event1 = document.getElementById("acceptString");
 event1.addEventListener('click', sliceSelect, false);
 
+
+
 var string1 = document.getElementById("input1");
 
 var slice1 = document.getElementById("input2");
+
+slice1.addEventListener('keypress', function(event){
+    var key = event.which;
+    if(key === 13){
+        sliceSelect();
+    }
+}, false);
 
 function sliceSelect() {
     
